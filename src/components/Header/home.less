@@ -1,0 +1,258 @@
+// 首页头部
+.bgHomeHead {
+  .cesi{
+      color: red;
+  }
+  // background: url(./img/bghead.png) repeat-x 0 0;
+  height: 138px;
+  // text-align: center;
+  position: relative;
+  .headInput {
+    // display: inline-block;
+    width: 805px;
+    // position: relative;
+    // top: 43px;
+    // left: 50%;
+    // margin-left: -403px;
+    .ant-input-group-addon {
+      &:first-child {
+        width: 97px;
+        border-radius: 26px 0 0 26px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #3951b3;
+        .gaojiss {
+          cursor: pointer;
+        }
+      }
+      &:nth-last-child(1) {
+        width: 103px;
+        border-radius: 0 26px 26px 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        background: #d5a64e;
+      }
+    }
+    .ant-input {
+      height: 52px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+//首页内容
+.bgHomeContent {
+  // background: url(./img/oneListbig.png) repeat-x 0 0;
+  min-height: 700px;
+  position: relative;
+  .homeContent {
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    .oneClassify {
+      height: 82px;
+      line-height: 115px;
+    }
+    .oneClassify2 {
+      height: 78px;
+      line-height: 120px;
+    }
+    .ant-radio-group {
+      width: 100%;
+      .icon {
+        width: 15%;
+        display: inline-block;
+        height: 82px;
+        margin-left: 10px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        text-align: right;
+        .iconButton {
+          margin-right: 30px;
+        }
+        .myButton {
+          // margin-top: 45px;
+          width: 138px;
+          height: 46px;
+          border-radius: 4px;
+          font-size: 18px;
+          font-weight: 400;
+          color: #fff;
+        }
+      }
+      .ant-radio-button-wrapper {
+        width: 13%;
+        height: 64px;
+        text-align: center;
+        line-height: 32px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+        background: none;
+        border: none;
+      }
+      .ant-radio-button-wrapper::before {
+        display: none;
+      }
+      .ant-radio-button-wrapper::after {
+        display: none;
+      }
+      .ant-radio-button-wrapper-checked {
+        width: 15%;
+        height: 64px;
+        border: 1px solid #fff;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.49) 0%, rgba(255, 255, 255, 0) 100%);
+      }
+    }
+
+    // 卡片
+    .Card {
+      .ant-card-body-wrapper {
+        border-radius: 10px;
+      }
+      margin-top: 10px;
+      .cardHead {
+        overflow: hidden;
+        font-size: 14px;
+        font-weight: 400;
+        color: #222;
+        .CheckableTag {
+          width: 100px;
+          height: 31px;
+          line-height: 26px;
+          text-align: center;
+          color: #67696d;
+          font-size: 14px;
+          font-weight: 400;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .CheckableTag:active {
+          background: #fbf6ed;
+          border-radius: 6px;
+          color: #d5a64e;
+        }
+        .ant-tag-checkable-checked {
+          background: #fbf6ed;
+          border-radius: 6px;
+          color: #d5a64e;
+        }
+      }
+      .cardTag {
+        margin: 4px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #222;
+      }
+      .cardCollapse {
+        .ant-collapse-item {
+          border: none;
+          .ant-collapse-header {
+            font-size: 14px;
+            font-weight: 400;
+            color: #222;
+            padding: 0;
+            background: none;
+            border: none;
+            .anticon {
+              float: right;
+              margin-top: 5px;
+            }
+          }
+          .ant-collapse-content {
+            background: none;
+            border: none;
+            .ant-collapse-content-box {
+              padding-left: 0;
+              padding-right: 0;
+            }
+          }
+          .ant-checkbox-wrapper {
+            width: 100%;
+            height: 20px;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 0 !important;
+          }
+        }
+      }
+    }
+    .bigCard {
+      .ant-card-body-wrapper {
+        height: 64px;
+        line-height: 32px;
+      }
+    }
+    .tableCard {
+      margin-bottom: 30px;
+      .ant-card-body-wrapper {
+        // height: 64px;
+        line-height: 32px;
+      }
+      .CheckableTable {
+        // width: 88px;
+        height: 31px;
+        line-height: 26px;
+        text-align: center;
+        color: #67696d;
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: 8px;
+        padding: 0;
+        // margin-right: 4px;
+      }
+      .CheckableTable:active {
+        background: #fff;
+        border-radius: 6px;
+        color: #3279f2 !important;
+      }
+      .ant-tag-checkable-checked {
+        background: #fff !important;
+        border-radius: 6px;
+        color: #3279f2 !important;
+      }
+    }
+  }
+}
+.moreCheckableTag {
+  .CheckableTag {
+    width: 100px;
+    height: 31px;
+    line-height: 26px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #67696d;
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .CheckableTag:active {
+    background: #fbf6ed;
+    border-radius: 6px;
+    color: #d5a64e;
+  }
+  .ant-tag-checkable-checked {
+    background: #fbf6ed;
+    border-radius: 6px;
+    color: #d5a64e;
+  }
+}
+
+//更多筛选的样式
+.searchContent {
+  .searchTitle {
+    width: 66px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #778192;
+    margin-right: 10px;
+    margin-left: 80px;
+    margin-bottom: 14px;
+    text-align: right;
+    display: inline-block;
+  }
+}
